@@ -2,18 +2,18 @@
 // Henter parametrene fra Astro.props
 const { href = "#", target = "_self", variant = "primary", size = "medium" } = Astro.props;
 
-const linkStyling = "m-3 underline border-double p-1 rounded-s active:bg-red-700 hover:text-white duration-1000 cursor-progress";
+const linkStyling = "m-3 active:bg-red-700 hover:blur-xs duration-1000 cursor-pointer";
 
 const variantClasses = {
-  primary: "text-blue-600/100 hover:bg-red-600",
-  secondary: "text-black hover:bg-blue-600",
-  standard: "text-blue-400 hover:bg-yellow-500"
+  primary: "text-red-500",
+  secondary: "text-black",
+  standard: "text-blue-400"
 };
 
 const sizeClasses = {
   standard: "text-2xl",  
-  large: "text-xl font-bold",
-  medium: "text-base font-semibold",
+  large: "text-xl",
+  medium: "text-base",
   small: "text-sm font-light",
 };
 ---

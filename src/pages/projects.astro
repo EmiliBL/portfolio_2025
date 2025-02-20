@@ -1,0 +1,68 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from '../components/Button.astro';
+import Link from '../components/Link.astro';
+import { Image } from 'astro:assets';
+---
+
+<MainLayout title="Titel">
+<section class="m-4"> 
+<h1 class="text-3xl sm:text-4xl sm:text-9xl p-4 text-red-500 font-bold">What my skills can do</h1>
+<!-- Horizontal linje -->
+<hr class="border-t-1 border-red-500 w-full">
+
+<!-- Oversigt -->
+<section class="flex flex-col sm:flex-row sm:flew-col-3">
+    <div>
+        <h2 class="sm:ml-4 sm:mt-12 text-red-500 text-3xl font-bold sm:text-4xl w-[262px]">Here is a extract of my projects</h2>
+    </div>
+    <!-- Vertikal linje -->
+    <div class="hidden sm:block mt-2 h-[565px] w-[1px] self-stretch bg-red-500"></div>
+
+<!-- vanvittig -->
+ <section class="col-span-2 sm:w-[545px]">
+<h3 class="mt-4 sm:ml-4 sm:mt-12 text-red-500 text-3xl sm:text-3xl">01 Podcast website</h3>
+<p class="sm:ml-4 sm:mt-4 text-red-500 text-sm mb-8 sm:text-lg">The Danish history podcast Vanvittig Verdenshistorie struggled to engage new users due to its exclusive, text-heavy content. My team designed a responsive web and mobile solution to improve accessibility and communication. </p>
+<div class="grid grid-cols-2 items-center sm:w-[545px]">
+<p class="sm:ml-4 sm:mt-4 text-red-500 opacity-75 text-s sm:text-sm">Date: Dec 2024</p>
+<Button variant="primary" size="medium" class="sm:w-[20] mr-5">Check it out</Button>
+</div>
+<hr class="border-t-1 border-red-500 w-full ml-2 mt-4">
+ <!-- duck trump 3 -->
+ <div class="sm:w-[545px]">
+    <h3 class="mt-4 sm:ml-4 sm:mt-12 text-red-500 text-3xl sm:text-3xl">02 Duck Trump</h3>
+    <p class="sm:ml-4 sm:mt-4 text-red-500 text-sm mb-8 sm:text-lg">For my introduction to JavaScript, I designed 'Duck Trump'—a game where the goal is to keep Trump thinking about rubber ducks instead of building walls.</p>
+    <div class="grid grid-cols-2 items-center sm:w-[545px]">
+        <p class="sm:ml-4 sm:mt-4 text-red-500 opacity-75 text-s sm:text-sm">Date: May 2024</p>
+    <Button variant="primary" size="medium" class="sm:w-[20]">Check it out</Button>
+    </div>
+    
+</div>
+ </section>
+
+ <!-- Vertikal linje -->
+ <div class="hidden sm:block mt-2 ml-5 h-[565px] w-[1px] self-stretch bg-red-500"></div>
+
+ <!-- karrusel -->
+ <section class="col-span-3 sm:w-[545px]">
+    <h3 class="mt-4 sm:ml-4 sm:mt-12 text-red-500 text-3xl sm:text-3xl">03 Karrusel Festival</h3>
+    <p class="sm:ml-4 sm:mt-4 text-red-500 text-sm mb-8 sm:text-lg">Karrusel Festival faces strong competition in the Danish festival scene. To stand out, it needed a clear design system, an intuitive artist overview, an accessible map, and a seamless ticket-buying experience.  </p>
+    <div class="grid grid-cols-2 items-center sm:w-[545px]">
+    <p class="sm:ml-8 sm:mt-4 text-red-500 opacity-75 text-s sm:text-sm">Date: Oct 2024</p>
+    <Button variant="primary" size="medium" class="sm:w-[20]">Check it out</Button>
+    </div>
+
+<hr class="border-t-1 border-red-500 w-full ml-2 mt-4">
+<!-- the hair bar -->
+    <h3 class="mt-4 sm:ml-4 sm:mt-12 text-red-500 text-3xl sm:text-3xl">04 The Hair Bar</h3>
+    <p class="sm:ml-4 sm:mt-4 text-red-500 text-sm mb-8 sm:text-lg">The Hair Bar needed a clearer way to communicate its services and simplify bookings. We designed a user-friendly site with an intuitive service overview and a seamless booking flow.</p>
+    <div class="grid grid-cols-2 items-center sm:w-[545px]">
+        <p class="sm:ml-8 sm:mt-4 text-red-500 opacity-75 text-s sm:text-sm">Date: June 2024</p>
+    <Button variant="primary" size="medium" class="sm:w-[20]">Check it out</Button>
+    </div>
+   
+</section>
+</section>
+
+</section>
+</MainLayout>

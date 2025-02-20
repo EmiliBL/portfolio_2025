@@ -1,5 +1,26 @@
 ---
+import Link from "./Link.astro"
 ---
-<div>
-Header - tilføj navigation mm.
-</div>
+<!-- Navigations menu med logo:left og undersider:right -->
+<div x-data="{ showmenu: false }" class="p-4 fixed lg:static w-full bg-blue-500 text-red-500" >
+    <div id="navbar" class="flex flex-row justify-between">
+    <div id="logo" class="font-Unbounded text-3xl">
+    <a href="/">Emilie</a>
+    </div>
+
+    <nav id="desktopmenu" class="hidden lg:block">
+    <ul class="flex flex-row gap-4 font-light sm:text-base">
+    <li class=""><Link href="/projects" >Projects</Link></li>
+    <li class=""><Link href="/about" >About</Link></li>
+    </ul>
+    </nav>
+    <button id="burgermenu" class="lg:hidden font-light" x-on:click="showmenu = ! showmenu">Menu</button>
+    </div>
+    <nav id="mobilmenu" class="flex flex-col content-center pt-4 font-light" 
+    x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
+    <ul >
+    <li class="text-right py-2 border-y-2"><Link href="/projects" >Projects</Link></li>
+    <li class="text-right py-2 border-b-2"><Link href="/about" >About</Link></li>
+    </nav>
+    </div>
+    
