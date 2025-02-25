@@ -6,17 +6,43 @@ import { Image } from 'astro:assets';
 ---
 
 <MainLayout title="Titel">
-<h1 class="text-4xl sm:text-9xl p-4 text-red-500 font-bold">Multimediedesign & Digital Designer</h1>
+<section class="herosection"> 
+<h1 class="font-sans text-4xl sm:text-9xl p-4 text-red-500 font-bold">Multimediedesign & Digital Designer</h1>
 
-<!-- See my work CTA -->
+<!-- About med & resume CTA -->
 <div class="sm:flex mt-12 sm:ml-230 sm:mt-50 sm:space-x-4 hover:underline underline-offset-4 decoration-red-500 decoration-1 hover:blur-xs ">
 	<a href="/projects" class="flex items-center space-x-4">
-	  <button class="ml-4 text-red-500 text-2xl sm:text-5xl font-light">See my skills in action</button>
+	  <button class="ml-4 text-red-500 text-2xl sm:text-5xl font-light">About me</button>
 	  <img src="/src/assets/pil-logo.svg" alt="pil"class="w-8 h-12 sm:w-16 sm_h-16">
 	</a>
   </div>
 
-<h2 class="text-2xl sm:text-7xl sm:font-stretch-ultra-expanded p-4 text-red-500 font-bold">EMILIE BRØGGER LARSEN</h2>
+  <div class="sm:flex sm:ml-230 sm:space-x-4 hover:underline underline-offset-4 decoration-red-500 decoration-1 hover:blur-xs ">
+	<a href="/projects" class="flex items-center space-x-4">
+	  <button class="ml-4 text-red-500 text-2xl sm:text-5xl font-light">Resume</button>
+	  <img src="/src/assets/pil-logo.svg" alt="pil"class="w-8 h-12 sm:w-16 sm_h-16">
+	</a>
+  </div>
+
+
+<!-- <h2 class="text-2xl sm:text-7xl sm:font-stretch-ultra-expanded p-4 text-red-500 font-bold">EMILIE BRØGGER LARSEN</h2> -->
+</section>
+
+<!-- Horizontal linje -->
+<hr class="mt-8 sm:mt-16 border-t-1 border-red-500 w-full">
+
+<section class="about-me">
+<div class="about">
+<h2 class="mt-8 font-bold text-3xl text-red-500 sm:text-5xl sm:mt-16">With nearly 10 years of experience in design, I want to create user-focused, sustainable solutions. </h2>
+<h3 class="text-red-500 font-light text-2xl mt-8 sm:mt-16 sm:text-4xl">Get to know me</h3>
+<p class="font-sans text-red-500 text-2xl sm:"> As a student in Multimediedesign and with a previous Professional bachelor's in Textile design and communication, I aim to become a UX researcher, designer, or project manager, creating accessible and easy-use design. </p>
+</section>
+</div>
+
+<div class="get-in-touch">
+
+</div>
+
 </MainLayout>
 
 
