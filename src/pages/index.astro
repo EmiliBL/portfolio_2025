@@ -3,46 +3,192 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
+import TextKarussel from "../components/TextKarussel.astro";
+import 'animate.css';
 ---
 
-<MainLayout title="Titel">
-<section class="herosection"> 
-<h1 class="font-sans text-4xl sm:text-9xl p-4 text-red-500 font-bold">Multimediedesign & Digital Designer</h1>
+<MainLayout title="Digital presentation">
+<div class="mx-4"> 
+<section class="pt-24"> 
+<h1 style="font-family: 'Unbounded', sans-serif;" class="animate__animated animate__jackInTheBox text-4xl sm:text-9xl text-red-500 font-bold">
+	Multimediedesign & Digital Designer</h1>
 
 <!-- About med & resume CTA -->
 <div class="sm:flex mt-12 sm:ml-230 sm:mt-50 sm:space-x-4 hover:underline underline-offset-4 decoration-red-500 decoration-1 hover:blur-xs ">
-	<a href="/projects" class="flex items-center space-x-4">
-	  <button class="ml-4 text-red-500 text-2xl sm:text-5xl font-light">About me</button>
+	<a href="#about" class="flex items-center space-x-4 animate-bounce">
+	  <button class="cursor-pointer text-red-500 text-2xl sm:text-5xl font-light">About me</button>
 	  <img src="/src/assets/pil-logo.svg" alt="pil"class="w-8 h-12 sm:w-16 sm_h-16">
 	</a>
   </div>
-
-  <div class="sm:flex sm:ml-230 sm:space-x-4 hover:underline underline-offset-4 decoration-red-500 decoration-1 hover:blur-xs ">
-	<a href="/projects" class="flex items-center space-x-4">
-	  <button class="ml-4 text-red-500 text-2xl sm:text-5xl font-light">Resume</button>
-	  <img src="/src/assets/pil-logo.svg" alt="pil"class="w-8 h-12 sm:w-16 sm_h-16">
-	</a>
-  </div>
-
-
-<!-- <h2 class="text-2xl sm:text-7xl sm:font-stretch-ultra-expanded p-4 text-red-500 font-bold">EMILIE BRØGGER LARSEN</h2> -->
 </section>
 
 <!-- Horizontal linje -->
-<hr class="mt-8 sm:mt-16 border-t-1 border-red-500 w-full">
+<hr class="absolute left-0 right-0 border-t border-red-500">
 
-<section class="about-me">
-<div class="about">
-<h2 class="mt-8 font-bold text-3xl text-red-500 sm:text-5xl sm:mt-16">With nearly 10 years of experience in design, I want to create user-focused, sustainable solutions. </h2>
-<h3 class="text-red-500 font-light text-2xl mt-8 sm:mt-16 sm:text-4xl">Get to know me</h3>
-<p class="font-sans text-red-500 text-2xl sm:"> As a student in Multimediedesign and with a previous Professional bachelor's in Textile design and communication, I aim to become a UX researcher, designer, or project manager, creating accessible and easy-use design. </p>
+
+<!-- About me section -->
+<section id="about" class="grid grid-cols-1 sm:grid-cols-[2fr_1px_1fr] gap-x-8">
+<!-- 10 years experience -->
+    <div class="sm:min-h-[600px]">
+        <h2 style="font-family: 'Unbounded', sans-serif;" class="animate-pulse font-family: 'Unbounded' mt-8 font-bold text-3xl text-red-500 sm:text-5xl sm:mt-16 sm:w-2xl">
+            With nearly 10 years of experience in design, I want to create user-focused, sustainable solutions.
+        </h2>
+        <h3 style="font-family: 'Unbounded', sans-serif;" class="text-red-500 font-light text-3xl mt-8 sm:mt-16 sm:text-4xl">Get to know me</h3>
+        <p style="font-family: 'Roboto', sans-serif;" class="mt-4 sm:mt-8 font-extralight text-red-500 text-lg sm:w-2xl">
+            As a student in Multimediedesign and with a previous Professional bachelor's in Textile design and communication, I aim to become a UX researcher, designer, or project manager, creating accessible and easy-use design.
+        </p>
+    </div>
+
+    <!-- Vertikal linje -->
+    <div class="hidden sm:block bg-red-500 w-[1px] h-[6] mt-8 sm:mb-4 sm:mt-4"></div>
+
+    <!-- get in touch -->
+    <div class="sm:ml-8 mb-8">
+        <img class="mt-4 sm:mt-16" src="src/assets/images/me.webp" alt="Foto af Emilie">
+        <h3 style="font-family: 'Unbounded', sans-serif;" class="animate-bounce text-red-500 font-light text-2xl mt-8 sm:mt-16 sm:text-4xl">Get in touch</h3>
+        <div class="flex items-center space-x-4 mt-2 ">
+            <a href="https://github.com/EmiliBL" target="_blank" rel="noopener noreferrer">
+                <img class="w-8 h-8 sm:w-12 sm:h-12 hover:blur-sm" src="/src/assets/github.svg" alt="Github">
+            </a>
+            <a href="https://www.linkedin.com/in/emilie-broegger-larsen/?locale=en_US&trk=public-profile-join-page" target="_blank" rel="noopener noreferrer">
+                <img class="w-8 h-8 sm:w-12 sm:h-12 hover:blur-sm" src="/src/assets/linkedin.svg" alt="Linkedin">
+            </a>
+        </div>
+    </div>
+
 </section>
+
+<!-- Horizontal linje -->
+<hr class="absolute left-0 right-0 border-t border-red-500">
+
+
+<!-- What i can do -->
+<section id="skills" class="flex flex-col sm:flex-row sm:flew-col-3">
+    <div>
+        <h2 style="font-family: 'Unbounded', sans-serif;" class="mt-4 sm:ml-4 sm:mt-12 text-red-500 text-3xl font-bold sm:text-4xl w-[262px] animate-pulse">
+			What I can do</h2>
+    </div>
+    <!-- Vertikal linje -->
+    <div class="hidden sm:block mt-2 h-[600] w-[1px] self-stretch bg-red-500"></div>
+
+<!-- digital design -->
+ <section class="col-span-2 sm:w-[545px]">
+<h3 style="font-family: 'Unbounded', sans-serif;" class="mt-4 sm:ml-4 sm:mt-12 text-red-500 text-3xl sm:text-3xl">Digital Design</h3>
+<p style="font-family: 'Roboto', sans-serif;" class=" mt-4 sm:mt-8 font-extralight sm:ml-4  text-red-500 text-base mb-8 sm:text-lg">
+	I have gained valuable experience in creating, designing, and building responsive websites. With the help of design theories like Sprint, Double Diamond, and Design Thinking, I have a good foundation for creating user-friendly websites.
+</p>
+<p style="font-family: 'Roboto', sans-serif;" class="font-bold sm:ml-4 sm:mt-4 text-red-500 text-base mb-12 sm:text-lg">
+	Astro.build ༚ Tailwind.CSS ༚ Figma ༚ JavaScript	</p>
+<hr class="border-t-1 border-red-500 w-full ml-2 mt-4">
+ <!-- Ux research-->
+ <div class="sm:w-[545px]">
+    <h3 style="font-family: 'Unbounded', sans-serif;" class="mt-4 sm:ml-4 sm:mt-12 text-red-500 text-3xl sm:text-3xl">UX Research</h3>
+    <p style="font-family: 'Roboto', sans-serif;" class=" mt-4 sm:mt-8 font-extralight sm:ml-4 text-red-500 text-base mb-8 sm:text-lg">
+		By applying methods like user testing, wireframing, and data analysis, I ensure designs meet user needs and expectations.
+	</p>
+	<p style="font-family: 'Roboto', sans-serif;" class="font-bold sm:ml-4 sm:mt-4 text-red-500 text-base mb-8 sm:text-lg">
+		Project management ༚ User test/interview ༚ Surveys ༚ Wireframes ༚ Prototyping ༚ Sitemap ༚ Design system	</p>
+</div>
+<hr class="sm:hidden border-t-1 border-red-500 w-full ml-2 mt-5">
+ </section>
+
+ <!-- Vertikal linje -->
+ <div class="hidden sm:block mt-2 ml-5 h-[600px] w-[1px] self-stretch bg-red-500"></div>
+
+ 
+ <!-- Multimediedesign -->
+ <section class="col-span-3 sm:w-[545px]">
+    <h3 style="font-family: 'Unbounded', sans-serif;" class="mt-4 sm:ml-4 sm:mt-12 text-red-500 text-3xl sm:text-3xl">Multimediedesigner</h3>
+    <p style="font-family: 'Roboto', sans-serif;" class=" mt-4 sm:mt-8 font-extralight sm:ml-4 sm:mt-4 text-red-500 text-base mb-8 sm:text-lg">
+		I have developed a strong foundation in multimedia design, working with both visual and interactive elements to create engaging digital experiences.	
+	</p> 
+	<p style="font-family: 'Roboto', sans-serif;" class="font-bold sm:ml-4 sm:mt-15 text-red-500 text-base sm:text-lg">
+		Adobe Photoshop / Illustrator / InDesign ༚ uMarketing Suite	
+	</p>
+    
+
+<hr class=" border-t-1 border-red-500 w-full ml-2 mt-5">
+<!-- Backend -->
+    <h3 style="font-family: 'Unbounded', sans-serif;" class="mt-4 sm:ml-4 sm:mt-12 text-red-500 text-3xl sm:text-3xl">Backend</h3>
+    <p style="font-family: 'Roboto', sans-serif;" class=" mt-4 sm:mt-8 font-extralight sm:ml-4 text-red-500 text-base mb-8 sm:text-lg">
+		Working in Visual Studio Code, I strive to create sustainable code solutions that have an engaging impact and prioritize accessibility.
+	</p>
+	<p style="font-family: 'Roboto', sans-serif;" class="font-bold sm:ml-4 sm:mt-4 text-red-500 text-base mb-8 sm:text-lg">
+		Astro.build ༚ Tailwind.CSS ༚ Figma ༚ JavaScript	</p>
+    
+   
+</section>
+</section>
+
+<!-- Horizontal linje -->
+<hr class="sm:mt-4 absolute left-0 right-0 border-t border-red-500">
+
+
+<!-- my projects -->
+<h2 style="font-family: 'Unbounded', sans-serif;" class="mt-8 font-bold text-3xl text-red-500 sm:text-5xl sm:mt-16 sm:w-2xl animate-pulse"> 
+	Extract of my projects</h2>
+<section id="projects" class="grid grid-cols-3 gap-8">
+<!-- VVH -->
+<div>
+	<h3 style="font-family: 'Unbounded', sans-serif;" class="mt-4 sm:mt-12 text-red-500 text-2xl sm:text-3xl">Podcast <span class="block sm:inline">duo</span>
+    <p style="font-family: 'Roboto', sans-serif;" class="t
+	mt-2 font-extralight sm:mt-4 text-red-500 text-base mb-8 sm:text-lg">
+		We redesigned Vanvittig Verdenshistorie’s site for desktop and mobile to attract new listeners and refine their tone of voice.	
+	</p>
+	<a href="https://kea-t10-vanvittig-verdenshistorie.netlify.app/" class="">
+		<button style="font-family: 'Unbounded', sans-serif;" class="cursor-pointer underline hover:blur-sm text-red-500 text-lg sm:text-xl font-light">Check the end result out</button>
+	  </a>
 </div>
 
-<div class="get-in-touch">
-
+<!-- KBH billeder -->
+<div>
+	<h3 style="font-family: 'Unbounded', sans-serif;" class="mt-4 sm:ml-4 sm:mt-12 text-red-500 text-2xl sm:text-3xl">
+		CPH Lookbook</h3>
+    <p style="font-family: 'Roboto', sans-serif;" class="mt-2 font-extralight sm:ml-4 sm:mt-4 text-red-500 text-base mb-32 sm:mb-4 sm:text-lg">
+		An assignment where I recreated an existing layout and design.	
+	</p>
+	<a href="https://kbh-lookbook-assignment.netlify.app/" class="flex items-stretch space-x-4 sm:mt-15">
+		<button style="font-family: 'Unbounded', sans-serif;" class="cursor-pointer underline hover:blur-sm ml-4 text-red-500 text-lg sm:text-xl font-light">Check the end result out</button>
+	  </a> 
 </div>
 
+<!-- Digital clean up day -->
+<div>
+	<h3 style="font-family: 'Unbounded', sans-serif;" class="mt-4 sm:ml-4 sm:mt-12 text-red-500 text-2xl sm:text-3xl">Digital Cleanup day</h3>
+    <p style="font-family: 'Roboto', sans-serif;" class="mt-2 mb-14 font-extralight sm:ml-4 sm:mt-4 text-red-500 text-base sm:text-lg sm:mb-8">
+		A Danish version of the International Digital Cleanup Day, designed to inform and engage people in the project/event.
+	</p> 	
+	<a href="https://digitaloprydningsdag-team8.netlify.app/" class="">
+		<button style="font-family: 'Unbounded', sans-serif;" class="cursor-pointer underline hover:blur-sm text-red-500 text-lg sm:text-xl font-light">Check the end result out</button>
+	  </a>
+</div>
+</section>
+
+
+<!-- Horizontal linje -->
+<hr class="mt-4 sm:mt-8 absolute left-0 right-0 border-t border-red-500">
+
+<!-- arbejds Timeline -->
+ <section id="resume">
+<h2 style="font-family: 'Unbounded', sans-serif;" class="animate-pulse mt-8 font-bold text-3xl text-red-500 sm:text-5xl sm:mt-16 sm:w-2xl"> Experience & Education</h2>
+<img class="hidden sm:block sm:place-content-center mt-8 sm:mt-8" src="/src/assets/timeline.svg" alt="timeline">
+<img class="block sm:hidden sm:place-content-center mt-8 sm:mt-16" src="/src/assets/small-timeline.svg" alt="timeline">
+</section>
+
+<!-- Horizontal linje -->
+<hr class="mt-4 sm:mt-8 absolute left-0 right-0 border-t border-red-500">
+
+
+<!-- running text -->
+<section>
+	<h2 style="font-family: 'Unbounded', sans-serif;" class="animate-pulse mt-8 mb-4 font-bold text-3xl text-red-500 sm:text-5xl sm:mt-16 sm:w-2xl"> Recommendation</h2>
+	<TextKarussel ></TextKarussel>
+</section>
+
+<!-- Horizontal linje -->
+<hr class="mt-8 mb-8 sm:mt-16 sm:mb-16 absolute left-0 right-0 border-t border-red-500">
+
+</div>
 </MainLayout>
 
 

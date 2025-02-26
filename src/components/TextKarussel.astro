@@ -1,0 +1,27 @@
+---
+import '../styles/tailwind.css';
+---
+
+<div class="w-full overflow-hidden">
+    <div
+    style="font-family: 'Unbounded', sans-serif;" class=" pt-6 pb-6 inline-block whitespace-nowrap font-light text-4xl sm:text-6xl animate-marquee text-red-500 sm:w-full"
+    >
+    Da Frau Larsen über ein umfassendes Fachwissen verfügt, beherrschte sie ihren Aufgabenbereich bereits nach kurzer Zeit sehr selbstständig und sicher. 
+    Jeg kan på det varmeste anbefale Emilie til enhver fremtidig stilling, hvor der kræves engagement, ansvarlighed og et skarpt øje for detaljen. 
+    </div>
+  </div>
+  
+  <style>
+    @keyframes marquee {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  
+    .animate-marquee {
+      animation: marquee 12s linear infinite;
+    }
+  </style>

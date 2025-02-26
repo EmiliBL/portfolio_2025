@@ -2,7 +2,7 @@
 // Henter parametrene fra Astro.props
 const { href = "#", target = "_self", variant = "primary", size = "medium" } = Astro.props;
 
-const linkStyling = "m-3 active:bg-red-700 hover:blur-xs duration-1000 cursor-pointer";
+const linkStyling = "font-sans text-3xl m-3 active:bg-red-700 hover:blur-xs duration-1000 cursor-pointer";
 
 const variantClasses = {
   primary: "text-red-500",
@@ -13,11 +13,11 @@ const variantClasses = {
 const sizeClasses = {
   standard: "text-2xl",  
   large: "text-xl",
-  medium: "text-base",
+  medium: "text-xl",
   small: "text-sm font-light",
 };
 ---
 
-<a href={href} target={target} class:list={[linkStyling, variantClasses[variant], sizeClasses[size]]}>
+<a href={href} target={target} style="font-family: 'Roboto', sans-serif;" class:list={[linkStyling, variantClasses[variant], sizeClasses[size]]}>
   <slot />
 </a>
