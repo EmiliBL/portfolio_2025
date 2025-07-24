@@ -7,7 +7,7 @@ import TextKarussel from "../components/TextKarussel.astro";
 import 'animate.css';
 ---
 
-<MainLayout title="Digital presentation">
+<MainLayout title="Meet Emilie">
 <div class="mx-4"> 
 <section class="pt-24"> 
 <h1 style="font-family: 'Unbounded', sans-serif;" class="animate__animated animate__jackInTheBox text-4xl sm:text-9xl text-red-500 font-bold">
@@ -45,10 +45,10 @@ import 'animate.css';
     <!-- get in touch -->
     <div class="sm:ml-8 mb-8">
         <img class="mt-4 sm:mt-16" src="/me.webp" alt="Foto af Emilie">
-        <h3 style="font-family: 'Unbounded', sans-serif;" class="animate-bounce text-red-500 font-light text-2xl mt-8 sm:mt-16 sm:text-4xl">Get in touch</h3>
+        <h3 style="font-family: 'Unbounded', sans-serif;" class="text-red-500 font-light text-2xl mt-8 sm:mt-16 sm:text-4xl">Get in touch</h3>
         <div class="flex items-center space-x-4 mt-2 ">
             <a href="https://github.com/EmiliBL" target="_blank" rel="noopener noreferrer">
-                <img class="w-8 h-8 sm:w-12 sm:h-12 hover:blur-sm" src="/github.svg" alt="Github">
+                <img class="w-8 h-8 sm:w-12 sm:h-12 hover:blur-sm text-red-500" fill="currentColor" src="/github.svg" alt="Github">
             </a>
             <a href="https://www.linkedin.com/in/emilie-broegger-larsen/?locale=en_US&trk=public-profile-join-page" target="_blank" rel="noopener noreferrer">
                 <img class="w-8 h-8 sm:w-12 sm:h-12 hover:blur-sm" src="/linkedin.svg" alt="Linkedin">
@@ -127,54 +127,67 @@ import 'animate.css';
 
 <!-- my projects -->
 <h2 style="font-family: 'Unbounded', sans-serif;" class="mt-8 font-bold text-3xl text-red-500 sm:text-5xl sm:mt-16 sm:w-2xl animate-pulse"> 
-	Extract of my projects</h2>
-	<section id="projects" class="grid grid-cols-1 sm:grid-cols-3 gap-8">
-		<!-- VVH -->
-		<div class="flex items-start">
-			<div>
-				<h3 style="font-family: 'Unbounded', sans-serif;" class="mt-4 sm:mt-12 text-red-500 text-2xl sm:text-3xl">Podcast <span class="block sm:inline">duo</span>
-				</h3>
-				<p style="font-family: 'Roboto', sans-serif;" class="mt-2 font-extralight sm:mt-4 text-red-500 text-base mb-8 sm:text-lg">
-					We redesigned Vanvittig Verdenshistorie’s site for desktop and mobile to attract new listeners and refine their tone of voice.	
-				</p>
-				<a href="https://kea-t10-vanvittig-verdenshistorie.netlify.app/" class="">
-					<button style="font-family: 'Unbounded', sans-serif;" class="cursor-pointer underline hover:blur-sm text-red-500 text-lg sm:text-xl font-light">Check the end result out</button>
-				</a>
-			</div>
-			<!-- Vertical Line -->
-			<div class="sm:mt-8 hidden sm:block bg-red-500 w-[1px] h-[300px] mx-4"></div> <!-- Adjust height as needed -->
-		</div>
-	
-		<!-- KBH billeder -->
-		<div class="flex items-start">
-			<div>
-				<h3 style="font-family: 'Unbounded', sans-serif;" class="mt-4 sm:ml-4 sm:mt-12 text-red-500 text-2xl sm:text-3xl">
-					CPH Lookbook</h3>
-				<p style="font-family: 'Roboto', sans-serif;" class="mt-2 font-extralight sm:ml-4 sm:mt-4 text-red-500 text-base sm:mb- sm:text-lg">
-					An assignment where I recreated an existing layout and design.	
-				</p>
-				<a href="https://kbh-lookbook-assignment.netlify.app/" class="flex items-stretch space-x-4 mt-4 sm:mt-15">
-					<button style="font-family: 'Unbounded', sans-serif;" class="cursor-pointer underline hover:blur-sm sm:ml-4 text-red-500 text-lg sm:text-xl font-light">
-						Check the end result out</button>
-				</a>
-			</div>
-			<!-- Vertical Line -->
-			<div class="sm:mt-8 hidden sm:block bg-red-500 w-[1px] h-[300px] mx-4"></div> <!-- Adjust height as needed -->
-		</div>
-	
-		<!-- Digital clean up day -->
-		<div class="flex items-start">
-			<div>
-				<h3 style="font-family: 'Unbounded', sans-serif;" class="mt-4 sm:ml-4 sm:mt-12 text-red-500 text-2xl sm:text-3xl">Digital Cleanup day</h3>
-				<p style="font-family: 'Roboto', sans-serif;" class="mt-2 mb-4 sm:mb-8 font-extralight sm:ml-4 sm:mt-4 text-red-500 text-base sm:text-lg ">
-					A Danish version of the International Digital Cleanup Day, designed to inform and engage people in the project/event.
-				</p> 	
-				<a href="https://digitaloprydningsdag-team8.netlify.app/" class="">
-					<button style="font-family: 'Unbounded', sans-serif;" class="sm:ml-4 cursor-pointer underline hover:blur-sm text-red-500 text-lg sm:text-xl font-light">Check the end result out</button>
-				</a>
-			</div>
-		</div>
-	</section>
+  Extract of my projects
+</h2>
+
+<section id="projects" class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+
+  <!-- Lost farm festival -->
+  <div class="flex items-start">
+    <div class="flex flex-col justify-between sm:ml-4 sm:mt-12 text-red-500" style="min-height: 280px; font-family: 'Roboto', sans-serif;">
+      <div>
+        <h3 style="font-family: 'Unbounded', sans-serif;" class="text-2xl sm:text-3xl font-bold">Lost Farm Festival <span class="block sm:inline"></span></h3>
+        <p class="mt-2 font-extralight text-base sm:text-lg">
+          An unsolicited redesign of Lost Farm Festival’s website, created as a school project. Logos belong to the original company, and due to copyright restrictions, please contact me on LinkedIn for the code.
+        </p>
+      </div>
+    <a href="https://gr1-billetformular-lostfarmfestival.netlify.app/" target="_blank" rel="noopener noreferrer">
+  		<button class="font-unbounded bg-transparent border border-red-500 rounded-md text-red-500 px-4 py-2 cursor-pointer text-lg font-medium hover:bg-red-500 hover:text-blue-500 transition-colors duration-300 hover:animate-bounce">
+   		 Check the end result out
+ 	 	</button>
+	</a>
+
+    </div>
+    <div class="sm:mt-8 hidden sm:block bg-red-500 w-[1px] h-[300px] mx-4"></div>
+  </div>
+
+  <!-- KBH billeder -->
+  <div class="flex items-start">
+    <div class="flex flex-col justify-between sm:ml-4 sm:mt-12 text-red-500" style="min-height: 280px; font-family: 'Roboto', sans-serif;">
+      <div>
+        <h3 style="font-family: 'Unbounded', sans-serif;" class="text-2xl sm:text-3xl font-bold">CPH Lookbook</h3>
+        <p class="mt-2 font-extralight text-base sm:text-lg">
+          An assignment where I recreated an existing layout and design for a fictive picture book.
+        </p>
+      </div>
+     <a href="https://kbh-lookbook-assignment.netlify.app/" target="_blank" rel="noopener noreferrer">
+  		<button class="font-unbounded bg-transparent border border-red-500 rounded-md text-red-500 px-4 py-2 cursor-pointer text-lg sm:text-xl font-light hover:bg-red-500 hover:text-blue-500 hover:animate-bounce transition-colors duration-300"> 
+		Check the end result out
+  		</button>
+	</a>
+    </div>
+    <div class="sm:mt-8 hidden sm:block bg-red-500 w-[1px] h-[300px] mx-4"></div>
+  </div>
+
+  <!-- Vanvittig verdenshistorie redesign -->
+  <div class="flex items-start">
+    <div class="flex flex-col justify-between sm:ml-4 sm:mt-12 text-red-500" style="min-height: 280px; font-family: 'Roboto', sans-serif;">
+      <div>
+        <h3 style="font-family: 'Unbounded', sans-serif;" class="text-2xl sm:text-3xl font-bold">Podcast Duo</h3>
+        <p class="mt-2 font-extralight text-base sm:text-lg">
+          We redesigned Vanvittig Verdenshistorie’s site for desktop and mobile to attract new listeners and refine their tone of voice.
+        </p>
+      </div>
+    <a href="https://kea-t10-vanvittig-verdenshistorie.netlify.app/" target="_blank" rel="noopener noreferrer">
+  		<button class="font-unbounded bg-transparent border border-orange-500 rounded-md text-orange-500 px-4 py-2 cursor-pointer text-lg sm:text-xl font-light hover:bg-orange-500 hover:text-white hover:animate-bounce transition-colors duration-300">
+   		 Check the end result out
+  		</button>
+	</a>
+    </div>
+  </div>
+
+</section>
+
 	
 	
 
@@ -194,7 +207,7 @@ import 'animate.css';
 
 
 <!-- running text -->
-<section>
+<section id="text-karussel">
 	<h2 style="font-family: 'Unbounded', sans-serif;" class="animate-pulse mt-8 mb-4 font-bold text-3xl text-red-500 sm:text-5xl sm:mt-16 sm:w-2xl"> Recommendation</h2>
 	<TextKarussel ></TextKarussel>
 </section>
